@@ -25,11 +25,11 @@
 <% end %> -->
 
 <%= form_with(model: @user) do |form| %>
-  <%= form.label :username %>
-  <%= form.text_field :username %></br></br>
+  <%= form.label :username, "Enter your username" %>
+  <%= form.text_field :username, placeholder: "Enter your username", value: "Hahaha" %></br></br>
   <%= form.label :email %>
-  <%= form.email_field :email %></br></br>
-  <%= form.label :password %>
+  <%= form.email_field :email, placeholder: "example@email.com" %></br></br>
+  <%= form.label :password, "Enter password" %>
   <%= form.password_field :password %></br></br>
   <%= form.submit %>
 <% end %>
